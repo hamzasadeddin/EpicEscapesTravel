@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Travel</title>
+    <link rel="stylesheet" href="travel_recommendation.css"> <!-- External CSS -->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h1>
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/passport-ticket-icon.png" alt="Epic Travel Logo">
+            Epic Travel
+        </h1>
+        <ul>
+            <li><a href="#" onclick="showHome()">Home</a></li>
+            <li><a href="#" onclick="showAbout()">About Us</a></li>
+            <li><a href="#" onclick="showContact()">Contact Us</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword">
+            <button id="searchBtn" onclick="searchFunction()">Search</button>
+            <button id="clearBtn" onclick="clearFunction()">Clear</button>
+        </div>
+        
+        
+        <!-- Results Section -->
+<div id="results"></div>
+    </nav>
+
+    <!-- Social Media Icons (Always Visible) -->
+    <div class="social-icons">
+        <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-app-round-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-icon.png" alt="YouTube"></a>
+    </div>
+
+    <!-- Hero Section (Home Page) -->
+    <section id="home-section" class="hero-section active">
+        <h1>Explore Dream Destination</h1>
+        <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+        <button class="btn">Book Now</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-section" class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to Epic Travel! We are a team of passionate individuals dedicated to providing excellent services for travelers worldwide.</p>
+        
+        <div class="team-section">
+            <div class="team-member">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <h3>Celina Thomas</h3>
+                <p>Marketing Head</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section (Initially Hidden) -->
+    <section id="contact-section" class="contact-section">
+        <h1>Contact Us</h1>
+        <p>Feel free to reach out to us with your travel inquiries or requests.</p>
+        
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email">
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="travel_recommendation.js"></script> <!-- External JS -->
+</body>
+</html>
